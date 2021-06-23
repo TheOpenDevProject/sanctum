@@ -12,7 +12,7 @@ class PersonalAccessToken extends Model implements HasAbilities
      *
      * @var array
      */
-    protected $casts = [
+    protected array $casts = [
         'abilities' => 'json',
         'last_used_at' => 'datetime',
     ];
@@ -22,7 +22,7 @@ class PersonalAccessToken extends Model implements HasAbilities
      *
      * @var array
      */
-    protected $fillable = [
+    protected array $fillable = [
         'name',
         'token',
         'abilities',
@@ -33,7 +33,7 @@ class PersonalAccessToken extends Model implements HasAbilities
      *
      * @var array
      */
-    protected $hidden = [
+    protected array $hidden = [
         'token',
     ];
 
